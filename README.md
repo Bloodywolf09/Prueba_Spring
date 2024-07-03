@@ -12,6 +12,17 @@ Este proyecto es un ejemplo de una aplicación CRUD (Crear, Leer, Actualizar y E
 
 Se adjunta tambien la BD que esta nombrada como Test.sql  
 
+Para poder ejecutar el proyecto en algunos casos se solicitara Maven, se puede seguir el siguiente video donde se muestra de manera rapida su instalación.  https://www.youtube.com/watch?v=rl5-yyrmp-0
+
+En el caso de ejecutar el proyecto con Maven se deben ejecutar los siguientes comandos  
+-mvn clean install  
+Este comando descargará todas las dependencias necesarias y compilará el proyecto. Si hay algún error en las dependencias, Maven lo manejará y te informará.  
+
+-mvn spring-boot:run
+
+
+El proyecto tambien se encuentra disponible en el siguiente Link: https://we.tl/t-C3br8gUxmm
+
 En el caso de que se requiera configurar el puerto del aplicativo o usuario y contraseñas del servidor de la Base de datos, se deben modificar en la siguiente ruta:  
 src/main/resources/aplication.properties
 
