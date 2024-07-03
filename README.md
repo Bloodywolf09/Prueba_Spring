@@ -53,6 +53,9 @@ Login
 
 # Documentación de la API
 
+Para poder acceder al OpenAPI 3 swagger, primero se debe realizar el logueo al proyecto y luego si entrar a la siguiente ruta:  
+localhost:8080/swagger-ui/index.html
+
 ## Endpoints de Usuarios
 
 | Método | Endpoint              | Descripción                          |
