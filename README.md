@@ -21,11 +21,7 @@ Este comando descargará todas las dependencias necesarias y compilará el proye
 -mvn spring-boot:run
 
 **En algunas ocasiones la versión del Maven en el pugin del 'pom.xml' presenta problemas por lo cual se debe cambiar con las siguientes opciones:**  
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.1.0</version>
-            </plugin>
+          
 ![image](https://github.com/Bloodywolf09/Prueba_Spring/assets/117796314/136bbe06-2d5d-407a-8951-ef2b81cfe426)
 
 El proyecto tambien se encuentra disponible en el siguiente Link: https://we.tl/t-C3br8gUxmm
