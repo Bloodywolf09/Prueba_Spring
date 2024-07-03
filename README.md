@@ -3,11 +3,17 @@ HEAD
 origin/main
 
 Este proyecto es un ejemplo de una aplicación CRUD (Crear, Leer, Actualizar y Eliminar) básica desarrollada utilizando Java 17, Spring Boot 3 y MySQL.
-##Tecnologías Utilizadas
+**Tecnologías Utilizadas**
+
 -JDK 19
 -Spring Boot 3
 -Spring security 6
 -MySQL 8
+
+Se adjunta tambien la BD que esta nombrada como Test.sql
+
+En el caso de que se requiera configurar el puerto del aplicativo o usuario y contraseñas del servidor de la Base de datos, se deben modificar en la siguiente ruta:
+src/main/resources/aplication.properties
 
 **Instrucciones de Uso**
 Sigue estos pasos para ejecutar la aplicación en tu entorno local:
