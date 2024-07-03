@@ -9,21 +9,21 @@ Este proyecto es un ejemplo de una aplicación CRUD (Crear, Leer, Actualizar y E
 -Spring security 6
 -MySQL 8
 
-##Instrucciones de Uso
+**Instrucciones de Uso**
 Sigue estos pasos para ejecutar la aplicación en tu entorno local:
 
-#Clonar el repositorio en tu máquina local
+**Clonar el repositorio en tu máquina local**
 git clone https://github.com/Bloodywolf09/Prueba_spring.git
-#Navegar al directorio del proyecto
+**Navegar al directorio del proyecto**
 cd CRUD-spring-boot-postgresql
 Ejecutar el proyecto o correr el archivo que se encuentra en la siguiente ruta
 src/main/java/co/com/gm/HolaSpringApplication.java
 
-##Base URL
+**Base URL**
 -http://localhost:8080
 
 Login
-## Iniciar sesión de usuario:
+**Iniciar sesión de usuario:**
 
 ## Endpoints de Login
 
