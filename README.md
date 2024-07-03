@@ -25,11 +25,11 @@ src/main/java/co/com/gm/HolaSpringApplication.java
 Login
 ## Iniciar sesión de usuario:
 
-## Endpoints de Productos
+## Endpoints de Login
 
-| Método | Endpoint              | Descripción                          |
-|--------|-----------------------|--------------------------------------|
-| GET    | `/product/list`       | Obtener todos los productos          |
+| Método | Endpoint        | Descripción                         |
+|--------|-----------------|-------------------------------------|
+| POST    | `/login`       | Inicio de sesion de usuario         |
 
 ### Cuerpo de la solicitud:
 ```json
@@ -39,21 +39,88 @@ Login
 }
 
 
-```json
 {
   "username": "user",
   "password": "123"
 }
-
+```
 
 # Documentación de la API
 
-## Endpoints de Productos
+## Endpoints de Usuarios
 
 | Método | Endpoint              | Descripción                          |
 |--------|-----------------------|--------------------------------------|
-| GET    | `/product/list`       | Obtener todos los productos          |
-| GET    | `/product/{id}`       | Obtener un solo producto             |
-| POST   | `/product/add`        | Guardar un nuevo producto            |
-| PUT    | `/product/update/{id}`| Actualizar un producto existente     |
-| DELETE | `/product/{id}`       | Eliminar un producto                 |
+| GET    | `/`                   | Obtener todos los productos          |
+| POST   | `/agregar`            | Guardar un nuevo usuario             |
+| PUT    | `/editar/{idPersona}` | Actualizar un usuario existente      |
+| DELETE | `/eliminar/{id}`      | Eliminar un Usuario                  |
+
+
+Obtener todos los Usuarios : GET /
+
+Respuesta exitosa:
+
+```json
+{
+  "idPersona": 1,
+  "nombre": "Juanito",
+  "apellido": "Juarez",
+  "email": "jjuarez@gmail.com",
+  "telefono": "3214567899"
+},
+{
+  "idPersona": 2,
+  "nombre": "Karla Ruiz",
+  "apellido": "Gomez",
+  "email": "karla@gmail.com",
+  "telefono": "3215555555"
+}
+//.. otros usuarios
+```
+
+Crear un nuevo Usuario: POST /agregar
+
+Cuerpo de la solicitud
+
+```json
+{
+  "nombre": "Manuel",
+  "apellido": "Manrique",
+  "email": "mmanrique@gmail.com",
+  "telefono": "555555555"
+},
+{
+  "idPersona": 20,
+  "nombre": "Manuel",
+  "apellido": "Manrique",
+  "email": "mmanrique@gmail.com",
+  "telefono": "555555555"
+}
+```
+
+Actualizar un usuario existente: PUT /editar/{idPersona}
+
+Parámetros:
+{idPersona}: ID del usuario que se va a actualizar
+
+Solicitud:
+```json
+{
+  "idPersona": 1,
+  "nombre": "asd",
+  "apellido": "aaa",
+  "email": "striaang@gmail.com",
+  "telefono": "1232124"
+}
+```
+Respuesta:
+```json
+{
+  "idPersona": 1,
+  "nombre": "asdaa",
+  "apellido": "aaaaff",
+  "email": "striaassng@gmail.com",
+  "telefono": "1232124666"
+}
+```
